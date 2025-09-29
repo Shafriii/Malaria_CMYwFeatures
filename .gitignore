@@ -32,7 +32,8 @@ MANIFEST
 *.manifest
 *.spec
 #images
-*.jpg
+Dataset/**/*.jpg
+Dataset/**/*.png
 #models
 .pt
 
