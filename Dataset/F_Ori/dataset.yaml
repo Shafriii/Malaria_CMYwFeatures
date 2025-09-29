@@ -1,0 +1,10 @@
+names:
+- Gametocyte
+- Trophozoite
+- Schizont
+- Ring
+nc: 4
+path: C:\PENTING BUAT KULIAH\Thesis S2\Codingan\ngoding baru lagi\F_Ori
+test: test/images
+train: train/images
+val: val/images
