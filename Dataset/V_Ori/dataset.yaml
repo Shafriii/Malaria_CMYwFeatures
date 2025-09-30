@@ -1,0 +1,10 @@
+path: c:\Users\Lemonade\Documents\Github_Repos\Malaria_CMYwFeatures\Malaria_CMYwFeatures\Dataset\malaria\F_New
+train: train/images
+val: val/images
+test: test/images
+nc: 4
+names:
+- Gametocyte
+- Trophozoite
+- Schizont
+- Ring

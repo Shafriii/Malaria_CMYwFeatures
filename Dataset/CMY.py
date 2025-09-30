@@ -73,8 +73,8 @@ def duplicate_and_convert_custom(source_folder, target_folder):
 
 if __name__ == "__main__":
     # Replace the paths below with your actual folder paths
-    source_folder = "Dataset/F_Ori"
-    target_folder = "Dataset/F_CMY"
+    source_folder = "Dataset/V_Ori"
+    target_folder = "Dataset/V_CMY"
 
     duplicate_and_convert_custom(source_folder, target_folder)
 

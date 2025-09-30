@@ -5,8 +5,8 @@ import os
 
 def main():
     # --- CONFIG --- # change to yolov11s.pt / m / l / x as you like
-    data_yaml = "YoloConfig/CMLBP.yaml"
-    run_name  = "Falci_CMLBP"
+    data_yaml = "YoloConfig/Vivax/Ori.yaml"
+    run_name  = "Vivax_Ori"
     epochs    = 100
     imgsz     = 640
     batch     = 16
