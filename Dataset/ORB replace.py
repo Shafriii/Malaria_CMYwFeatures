@@ -27,7 +27,7 @@ def create_orb_replace_blue(image_path):
 
     blue_channel, green_channel, red_channel = cv2.split(original_color_image)
 
-    result_image = cv2.merge([blue_channel, green_channel, keypoint_normalized])
+    result_image = cv2.merge([keypoint_normalized, green_channel, red_channel])
 
     return result_image, image_path
 
@@ -93,8 +93,8 @@ def duplicate_and_convert_orb_parallel(source_folder, target_folder):
                 print(f"Folder {source_labels} tidak ditemukan, lewati.")
 
 if __name__ == "__main__":
-    source_folder = "Dataset/F_CMY"
-    target_folder = "Dataset/F_ORBMY"
+    source_folder = "Dataset/V_CMY"
+    target_folder = "Dataset/V_CMORB"
 
     duplicate_and_convert_orb_parallel(source_folder, target_folder)
 

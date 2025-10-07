@@ -5,8 +5,8 @@ import os
 
 def main():
     # --- CONFIG --- # change to yolov11s.pt / m / l / x as you like
-    data_yaml = "YoloConfig/Vivax/Ori.yaml"
-    run_name  = "Vivax_Ori"
+    data_yaml = "YoloConfig/Vivax/CMHOG.yaml"
+    run_name  = "Vivax_CMHOG"
     epochs    = 100
     imgsz     = 640
     batch     = 16
@@ -18,7 +18,7 @@ def main():
 
     # --- TRAIN ---
     train_results = model.train(
-        data=data_yaml,
+        data=data_yaml, 
         epochs=epochs,
         imgsz=imgsz,
         batch=batch,

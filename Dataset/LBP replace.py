@@ -18,7 +18,7 @@ def create_lbp_replace_blue(image_path, P=8, R=1):
 
     blue_channel, green_channel, red_channel = cv2.split(img_color)
 
-    modified_img = cv2.merge([lbp_normalized, green_channel, red_channel])
+    modified_img = cv2.merge([blue_channel, green_channel, lbp_normalized])
     return modified_img
 
 def process_image(file_name, source_images, target_images):
@@ -73,8 +73,8 @@ def duplicate_and_convert_lbp_parallel(source_folder, target_folder):
                 print(f"Folder {source_labels} tidak ditemukan, lewati.")
 
 if __name__ == "__main__":
-    source_folder = "Dataset/F_Ori"
-    target_folder = "Dataset/F_CMLBP"
+    source_folder = "Dataset/V_Ori"
+    target_folder = "Dataset/V_LBPMY"
 
     duplicate_and_convert_lbp_parallel(source_folder, target_folder)
 

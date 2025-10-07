@@ -1,0 +1,10 @@
+# data.yaml
+train: C:\Users\Lemonade\Documents\Github_Repos\Malaria_CMYwFeatures\Malaria_CMYwFeatures\Dataset\V_CLBPY\train\images
+val: C:\Users\Lemonade\Documents\Github_Repos\Malaria_CMYwFeatures\Malaria_CMYwFeatures\Dataset\V_CLBPY\val\images
+test: C:\Users\Lemonade\Documents\Github_Repos\Malaria_CMYwFeatures\Malaria_CMYwFeatures\Dataset\V_CLBPY\test\images
+
+names:
+  0: Gametocyte
+  1: Trophozoite
+  2: Schizont
+  3: Ring

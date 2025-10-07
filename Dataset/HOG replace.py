@@ -23,7 +23,7 @@ def create_hog_replace_blue(image_path, pixels_per_cell=(8, 8), cells_per_block=
 
     blue_channel, green_channel, red_channel = cv2.split(img_color)
 
-    modified_img = cv2.merge([blue_channel, green_channel, hog_normalized])
+    modified_img = cv2.merge([hog_normalized, green_channel, red_channel])
     return modified_img, image_path
 
 def process_image(file_name, source_images, target_images):
@@ -82,8 +82,8 @@ def duplicate_and_convert_hog_parallel(source_folder, target_folder):
                 print(f"Folder {source_labels} tidak ditemukan, lewati.")
 
 if __name__ == "__main__":
-    source_folder = "Dataset/F_CMY"
-    target_folder = "Dataset/F_HOGMY"
+    source_folder = "Dataset/V_CMY"
+    target_folder = "Dataset/V_CMHOG"
 
     duplicate_and_convert_hog_parallel(source_folder, target_folder)
 
