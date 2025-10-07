@@ -6,7 +6,7 @@ TOKEN = "CMHOG"
 
 def evaluate_model():
     run_dir     = Path(f"{SPECIES}_{TOKEN}")
-    model_path  = run_dir / "weights" / "best.pt"
+    model_path  = "Results" / run_dir  / "weights" / "best.pt"
     yaml_path   = Path("YoloConfig") / f"{SPECIES}" / f"{TOKEN}.yaml"
     output_proj = str(run_dir / "Test")  
 
